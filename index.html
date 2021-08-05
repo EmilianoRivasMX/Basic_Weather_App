@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/clima_style.css">
+    <title>Weather App</title>
+</head>
+<body onload="onLoad()">
+    <header>
+        <h1>Basic Weather App</h1>
+        <i class="fas fa-cloud-sun fa-2x"></i>
+    </header>
+
+    <section id="container" class="main-container">
+        <div class="place-info">          
+            <p id="location"></p>
+            
+            <div class="info">
+                <p class="text">Date: </p><p id="date"></p>
+            </div>
+
+            <div class="info">
+                <p class="text">Description: </p><p id="description"></p>
+            </div>
+        </div>
+
+        <div class="conditions-container">
+            <div class="condition">
+                <p class="text">Humidity: </p><p id="humidity"></p>
+            </div>
+            
+            <div class="condition">
+                <p class="text">Pressure: </p><p id="pressure"></p>
+            </div>
+
+            <div class="condition">
+                <p class="text">Temperature: </p><p id="temperature"></p>
+            </div>
+        </div>
+    </section>
+
+    <div id="loader" class="loader">Loading...</div>
+
+    <footer id="footer">
+        <div class="author">
+            <p>App created by <span>Emiliano Rivas</span></p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/EmilianoRivasMX" class="btn-red-social fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.Instagram.com/EmilianoRivasMX" class="btn-red-social ig" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.Twitter.com/EmilianoRivasMX" class="btn-red-social tw" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.Linkedin.com/in/EmilianoRivasMX" class="btn-red-social lk" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.Github.com/EmilianoRivasMX" class="btn-red-social gh" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/59bcf5d722.js" crossorigin="anonymous"></script>
+</body>
+</html>
